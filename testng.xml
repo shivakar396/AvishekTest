@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="xurititestscript.TC_0001_Login"/>
+      <class name="xurititestscript.TC_0002_CreateCompany"/>
+      <class name="xurititestscript.TC_0003_ManageCompany"/>
+      <class name="xurititestscript.TC_0004_CreateCreditPlan"/>
+      <class name="xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping"/>
+      <class name="xurititestscript.TC_0006_CreditLimitApproval"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

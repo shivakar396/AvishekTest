@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[UserLogin]]>
+    </line>
+    <line>
+      <![CDATA[AdminLogin]]>
+    </line>
+    <line>
+      <![CDATA[ManagerLogin]]>
+    </line>
+    <line>
+      <![CDATA[NBFCLogin]]>
+    </line>
+    <line>
+      <![CDATA[createCompanyAsBuyer]]>
+    </line>
+    <line>
+      <![CDATA[createCompanyAsSeller]]>
+    </line>
+    <line>
+      <![CDATA[SearchCompany]]>
+    </line>
+    <line>
+      <![CDATA[ApproveBuyerCompny]]>
+    </line>
+    <line>
+      <![CDATA[SearchCompany]]>
+    </line>
+    <line>
+      <![CDATA[ApproveSellerCompny]]>
+    </line>
+    <line>
+      <![CDATA[CreateSellerCreditPlan]]>
+    </line>
+    <line>
+      <![CDATA[GetCreditPlan]]>
+    </line>
+    <line>
+      <![CDATA[AddBuyerInCreditPlan]]>
+    </line>
+    <line>
+      <![CDATA[SearchNBFC]]>
+    </line>
+    <line>
+      <![CDATA[NBFC_BuyerAndSellerMapping]]>
+    </line>
+    <line>
+      <![CDATA[ApproveCreditLimit]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-05-23T13:47:05 IST" name="Suite" finished-at="2023-05-23T13:48:39 IST" duration-ms="93094">
+    <groups>
+    </groups>
+    <test started-at="2023-05-23T13:47:05 IST" name="Test" finished-at="2023-05-23T13:48:39 IST" duration-ms="93094">
+      <class name="xurititestscript.TC_0006_CreditLimitApproval">
+        <test-method signature="TM0001_approveBuyerLimit()[pri:0, instance:xurititestscript.TC_0006_CreditLimitApproval@1e683a3e]" started-at="2023-05-23T13:48:38 IST" name="TM0001_approveBuyerLimit" finished-at="2023-05-23T13:48:39 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ApproveCreditLimit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM0001_approveBuyerLimit -->
+      </class> <!-- xurititestscript.TC_0006_CreditLimitApproval -->
+      <class name="xurititestscript.TC_0003_ManageCompany">
+        <test-method signature="TM001_ApproveBuyerCompny()[pri:1, instance:xurititestscript.TC_0003_ManageCompany@ea6147e]" started-at="2023-05-23T13:47:13 IST" name="TM001_ApproveBuyerCompny" finished-at="2023-05-23T13:47:55 IST" duration-ms="41510" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[SearchCompany]]>
+            </line>
+            <line>
+              <![CDATA[ApproveBuyerCompny]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM001_ApproveBuyerCompny -->
+        <test-method signature="TM001_ApproveSellerCompny()[pri:2, instance:xurititestscript.TC_0003_ManageCompany@ea6147e]" started-at="2023-05-23T13:47:55 IST" name="TM001_ApproveSellerCompny" finished-at="2023-05-23T13:48:37 IST" duration-ms="41772" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[SearchCompany]]>
+            </line>
+            <line>
+              <![CDATA[ApproveSellerCompny]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM001_ApproveSellerCompny -->
+      </class> <!-- xurititestscript.TC_0003_ManageCompany -->
+      <class name="xurititestscript.TC_0004_CreateCreditPlan">
+        <test-method signature="TM0001testCreateSellerCreditPlan()[pri:1, instance:xurititestscript.TC_0004_CreateCreditPlan@4d02f94e]" started-at="2023-05-23T13:48:37 IST" name="TM0001testCreateSellerCreditPlan" finished-at="2023-05-23T13:48:37 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[CreateSellerCreditPlan]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM0001testCreateSellerCreditPlan -->
+        <test-method signature="TM0002testAddBuyerInSellerCreditPlan()[pri:2, instance:xurititestscript.TC_0004_CreateCreditPlan@4d02f94e]" started-at="2023-05-23T13:48:37 IST" name="TM0002testAddBuyerInSellerCreditPlan" finished-at="2023-05-23T13:48:37 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[GetCreditPlan]]>
+            </line>
+            <line>
+              <![CDATA[AddBuyerInCreditPlan]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM0002testAddBuyerInSellerCreditPlan -->
+      </class> <!-- xurititestscript.TC_0004_CreateCreditPlan -->
+      <class name="xurititestscript.TC_0001_Login">
+        <test-method signature="TM001testUserLogin()[pri:0, instance:xurititestscript.TC_0001_Login@49912c99]" started-at="2023-05-23T13:47:05 IST" name="TM001testUserLogin" finished-at="2023-05-23T13:47:10 IST" duration-ms="4644" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[UserLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM001testUserLogin -->
+        <test-method signature="TM002testAdminLogin()[pri:0, instance:xurititestscript.TC_0001_Login@49912c99]" started-at="2023-05-23T13:47:10 IST" name="TM002testAdminLogin" finished-at="2023-05-23T13:47:11 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AdminLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM002testAdminLogin -->
+        <test-method signature="TM003testManagerLogin()[pri:0, instance:xurititestscript.TC_0001_Login@49912c99]" started-at="2023-05-23T13:47:11 IST" name="TM003testManagerLogin" finished-at="2023-05-23T13:47:11 IST" duration-ms="559" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ManagerLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM003testManagerLogin -->
+        <test-method signature="TM004testNBFCLogin()[pri:0, instance:xurititestscript.TC_0001_Login@49912c99]" started-at="2023-05-23T13:47:11 IST" name="TM004testNBFCLogin" finished-at="2023-05-23T13:47:12 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[NBFCLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM004testNBFCLogin -->
+      </class> <!-- xurititestscript.TC_0001_Login -->
+      <class name="xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping">
+        <test-method signature="TM0001_getNBFCName()[pri:1, instance:xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping@2b48a640]" started-at="2023-05-23T13:48:37 IST" name="TM0001_getNBFCName" finished-at="2023-05-23T13:48:38 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[SearchNBFC]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM0001_getNBFCName -->
+        <test-method signature="TM0002_mapBuyerAndSellerInNBFC()[pri:2, instance:xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping@2b48a640]" started-at="2023-05-23T13:48:38 IST" name="TM0002_mapBuyerAndSellerInNBFC" finished-at="2023-05-23T13:48:38 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[NBFC_BuyerAndSellerMapping]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM0002_mapBuyerAndSellerInNBFC -->
+      </class> <!-- xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping -->
+      <class name="xurititestscript.TC_0002_CreateCompany">
+        <test-method signature="TM001_searchGst()[pri:1, instance:xurititestscript.TC_0002_CreateCompany@24fcf36f]" started-at="2023-05-23T13:47:12 IST" name="TM001_searchGst" finished-at="2023-05-23T13:47:12 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TM001_searchGst -->
+        <test-method signature="TM002_createCompanyAsBuyer()[pri:2, instance:xurititestscript.TC_0002_CreateCompany@24fcf36f]" started-at="2023-05-23T13:47:12 IST" name="TM002_createCompanyAsBuyer" finished-at="2023-05-23T13:47:13 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createCompanyAsBuyer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM002_createCompanyAsBuyer -->
+        <test-method signature="TM003_createCompanyAsSeller()[pri:3, instance:xurititestscript.TC_0002_CreateCompany@24fcf36f]" started-at="2023-05-23T13:47:13 IST" name="TM003_createCompanyAsSeller" finished-at="2023-05-23T13:47:13 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createCompanyAsSeller]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TM003_createCompanyAsSeller -->
+      </class> <!-- xurititestscript.TC_0002_CreateCompany -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
