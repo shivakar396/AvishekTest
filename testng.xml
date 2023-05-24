@@ -9,6 +9,7 @@
       <class name="xurititestscript.TC_0004_CreateCreditPlan"/>
       <class name="xurititestscript.TC_0005_NBFC_BuyerAndSellerMapping"/>
       <class name="xurititestscript.TC_0006_CreditLimitApproval"/>
+      <class name="xurititestscript.TC_0007_UploadExcelInvoice"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
