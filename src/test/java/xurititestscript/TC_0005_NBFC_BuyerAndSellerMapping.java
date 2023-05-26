@@ -43,7 +43,7 @@ public class TC_0005_NBFC_BuyerAndSellerMapping {
 	}
 
 	@Test(priority = 2)
-	public void TM0002_mapBuyerAndSellerInNBFC() throws IOException 
+	public void TM0002_mapBuyerAndSellerInNBFC() throws IOException, InterruptedException 
 	{
 		FileLib fl=new FileLib();
 		String selrcmpnyid=fl.getPropertyData("ANUPAMSELLERID");
@@ -52,7 +52,15 @@ public class TC_0005_NBFC_BuyerAndSellerMapping {
 		String nbfcid=fl.getNBFCID(nbfc_name);
 		
 		XuritiAdmin xuriti_admin=new XuritiAdmin();
+		
 		Response response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "5", admnid);
 		
+		response=xuriti_admin.unmapped_NBFC(nbfcid, byrcmpnyid, selrcmpnyid, admnid);
+		
+		response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "5", admnid);
+		
+		String msg=response.body().jsonPath().get("message");
+		
+		Reporter.log(msg, true);
 	}
 }
