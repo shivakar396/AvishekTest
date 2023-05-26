@@ -53,11 +53,11 @@ public class TC_0005_NBFC_BuyerAndSellerMapping {
 		
 		XuritiAdmin xuriti_admin=new XuritiAdmin();
 		
-		Response response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "5", admnid);
+		Response response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "8", admnid);
 		
 		response=xuriti_admin.unmapped_NBFC(nbfcid, byrcmpnyid, selrcmpnyid, admnid);
 		
-		response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "5", admnid);
+		response=xuriti_admin.mapBuyarAndSellerinNBFC(nbfcid, byrcmpnyid, selrcmpnyid, "8", admnid);
 		
 		String msg=response.body().jsonPath().get("message");
 		
