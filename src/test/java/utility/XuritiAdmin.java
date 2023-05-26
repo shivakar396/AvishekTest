@@ -277,6 +277,50 @@ public class XuritiAdmin
 		return response;
 	}
 	
+	public Response unmapped_NBFC(String nbfc_id, String buyer_company_id, String seller_company_id, String admin_id) throws IOException, InterruptedException
+	{
+		FileLib fl=new FileLib();
+		String token=fl.getPropertyData("AdminToken");
+		FileCredential fc=new FileCredential();
+		String xuritibaseurl=fc.readCredential("XuritiBaseUrl");
+		
+		//https://uat.xuriti.app/api/nbfcs/unmap-nbfc/6409802d72e310559953ebc7
+		
+		RestAssured.baseURI=xuritibaseurl+"/nbfcs/unmap-nbfc/"+nbfc_id;
+		RequestSpecification  httpRequest=RestAssured.given();
+		
+		String s="{\r\n"
+				+ "    \"companies\": [\r\n"
+				+ "        {\r\n"
+				+ "            \"buyer_id\": \""+buyer_company_id+"\",\r\n"
+				+ "            \"seller_id\": \""+seller_company_id+"\"\r\n"
+				+ "        }\r\n"
+				+ "    ],\r\n"
+				+ "    \"user\": \""+admin_id+"\"\r\n"
+				+ "}";
+
+		httpRequest.header("Authorization","Bearer "+token).header("Content-Type","application/json");
+		httpRequest.body(s);
+		Response response=httpRequest.request(Method.POST);
+
+		Reporter.log("NBFC_BuyerAndSellerUnMapping",true);
+		int stscd=response.getStatusCode();
+		String stsln=response.getStatusLine();
+
+		Assert.assertEquals(stsln, "HTTP/1.1 200 OK");
+		Assert.assertEquals(stscd, 200);
+		
+			//Printing Response Body
+		//System.out.println(response.prettyPrint());
+		String msg="",unmsg="";
+		JsonResCls js=new JsonResCls();
+		
+		msg=js.getStringJsonValue(response, "messges");
+		Assert.assertEquals(msg, "Company un-mapped successfully");
+		
+		return response;
+	}
+	
 	public Response searchNBFC() throws IOException
 	{
 		
